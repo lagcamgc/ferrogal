@@ -1343,3 +1343,11 @@ a.borderless {
 	border: 0px; 
 	border-radius: 0rem;
 }
+
+.table-product {
+  display: table;
+}
+.table-product > div {
+  display: table-cell;
+  vertical-align: middle;
+}

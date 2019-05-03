@@ -178,7 +178,108 @@
           </ul>
           <!-- fieldsets -->
           <fieldset>
-            <table class="table table-borderless table-responsive">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <table class="table table-borderless">
+                  <thead class="thead-table">
+                    <tr>
+                      <th scope="col" class="pl-4">Resumen</th>
+                     <!--  <th scope="col" style="padding-right: 19%;">Información</th>
+                      <th scope="col" class="text-center pl-5">Coste</th> -->
+                    </tr>
+                  </thead>
+                  <tbody class="text-left">
+                    <tr>
+                      <td class="p-0 pt-4">
+                        <div class="card" style="background: #e9eef4; border: 0px solid rgba(0, 0, 0, 0.125); border-radius: 0rem;">
+                          <div class="card-body" style="padding-right: 5%; padding-left: 5%;">
+                            <table class="table table-card table-borderless" style="font-size: 14px;">
+                              <tbody>
+                                <tr>
+                                  <td class="text-color-blue-navy font-weight-bold">Importe de la compra</td>
+                                  <td>1.926,35 €</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-color-blue-navy font-weight-bold">Coste del envío</td>
+                                  <td>24,79 €</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-color-blue-navy pt-4 font-weight-bold">TOTAL A PAGAR <p style="font-size: 8px;">(Iva Incl.)</p></td>
+                                  <td>2.188,40 €</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-12 col-md-8">
+                <table class="table table-borderless">
+                  <thead class="thead-table">
+                    <tr>
+                      <th scope="col" class="pl-4">Opciones</th>
+                     <!--  <th scope="col" style="padding-right: 19%;">Información</th>
+                      <th scope="col" class="text-center pl-5">Coste</th> -->
+                    </tr>
+                  </thead>
+                  <tbody class="text-left">
+                    <tr>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </fieldset>
+          <!-- <fieldset>
+            <table class="table table-borderless">
+              <thead class="thead-table">
+                <tr>
+                  <th scope="col" class="pl-4" style="padding-right: 6%;">Forma de entrega</th>
+                  <th scope="col" style="padding-right: 19%;">Información</th>
+                  <th scope="col" class="text-center pl-5">Coste</th>
+                </tr>
+              </thead>
+              <tbody class="text-left">
+                <tr>
+                  <td scope="row" class="pl-4 text-left pt-5">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                      <label class="custom-control-label" for="customRadio1">Recogida en tiendas Ferrogal</label>
+                    </div>
+                  </td>
+                  <td class="text-left pt-5"><p></p></td>
+                  <td class="font-weight-bold text-right pr-5 pt-5">0,00 €</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="pl-4 text-left">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadio1">Empresa de transporte</label>
+                    </div>
+                  </td>
+                  <td><p>Servicio de transporte</p></td>
+                  <td class="font-weight-bold text-right pr-5">14,50 €</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="text-color-blue-navy">             
+              <hr />            
+            </div>
+
+            <div class="text-right mt-5 row justify-content-end" style="margin-bottom: 35%;">
+                <div class="col-9">
+                  <button type="submit" class="btn btn-dark font-weight-bold" style="background: #2b8f8b; width: 44%; border-color: transparent; font-size: 20px;">CONTINUAR <i class="fas fa-angle-double-right"></i></button>
+                </div>
+            </div>
+          </fieldset> -->
+
+          <fieldset>
+            <table class="table table-borderless">
               <thead class="thead-table">
                 <tr>
                   <th scope="col" class="pl-4">Producto</th>
@@ -193,14 +294,22 @@
               <tbody>
                 <tr>
                   <td scope="row" class="pl-4">
-                    <div class="row" style="width: 90%;">
+                    <div class="table-product">
+                      <div>
+                        <img src="img/furniture.jpg" alt="Furniture" class="w-50">
+                      </div>
+                      <div>
+                        <strong>Mueble de jardín CURVER ratan color grafito compuesto por 4 pie</strong>
+                      </div>
+                    </div>
+                    <!-- <div class="row" style="width: 90%;">
                       <div class="col-sm-3">
                         <img src="img/furniture.jpg" alt="Furniture" class="w-100">
                       </div>
                       <div class="col-sm-9 text-left pl-2 pr-0" id="parent">
                         <strong>Mueble de jardín CURVER ratan color grafito compuesto por 4 pie</strong>
                       </div>
-                    </div>
+                    </div> -->
                   </td>
                   <td><h6>329,94 €</h6></td>
                   <td>21 %</td>
@@ -320,7 +429,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset>
+          <!-- <fieldset>
             <div style="margin-bottom: 15%;">
               <div class="card" style="background: #f4f4f4; border: 0px solid rgba(0, 0, 0, 0.125); border-radius: 0rem;">
                 <div class="card-body">
@@ -428,7 +537,7 @@
               </div>
             </div>
           </fieldset>
-
+ -->
           <!-- <fieldset>
             <h3>Setup your phone</h3>
             <h6>We will send you a SMS. Input the code to verify.</h6> 
