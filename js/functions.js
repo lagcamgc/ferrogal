@@ -582,7 +582,7 @@ $(window).on('load', function() {
 
         for (var j = 0; j < items.length; j++) {
             for (var i = 0; i < items[j].items.length; i++) {
-                if (element.currentTarget.innerText == items[j].items[i]['name']) {
+                if (element.currentTarget.innerHTML == items[j].items[i]['name']) {
 
                     $("#third-options").find("li").remove();
                     $("#third-options").css('border-left', 0 + 'px');
