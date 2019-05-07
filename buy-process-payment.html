@@ -161,152 +161,148 @@
     <div class="overlay"></div>
    
    <main>
-      <div class="container margin-top-carousel p-0" style="margin-top: 13%;">
-        <div class="tittle text-color-blue-navy pb-6 text-center">
-          <h3>Nuevo cliente</h3>
-        </div>
-        <div class="text-center mt-4">
-          Los datos introducidos quedarán almacenados para futuros pedidos. <br>
-          Podrán modificarse facilmente desde el <strong>Área del Cliente</strong> o revisar el <strong>estado de los pedidos</strong>.
-        </div>
-        <div class="text-center mt-3" style="font-size: 13px;">
-          <em>Todos los campos son necesarios para el registro</em>
-        </div>
-
-        <div class="card-deck mt-5">
-          <div class="card" style="background: #f4f4f4; border: 0px solid rgba(0, 0, 0, 0.125); border-radius: 0rem;">
-            <div class="card-body">
-              <div class="card-text text-left text-color-blue-navy">
-                Datos del cliente:
-                <hr class="ml-0" style="width: 9%;" />
+      <div class="container margin-top-carousel p-0">
+        
+      <section class="multi_step_form">  
+        <form id="msform"> 
+          <!-- Tittle -->
+          <div class="tittle text-color-blue-navy pb-6">
+            <h2>Cesta de la compra</h2>
+          </div>
+          <!-- progressbar -->
+          <ul id="progressbar" class="p-0 mb-5">
+            <li class="active"></i>Cesta</li>  
+            <li class="active">Facturación y entrega</li> 
+            <li class="active">Transporte</li>
+            <li class="active">Pago</li>
+          </ul>
+          <!-- fieldsets -->
+          <!-- PAGO -->
+          <fieldset>
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <table class="table table-borderless">
+                  <thead class="thead-table">
+                    <tr>
+                      <th scope="col" class="pl-4">Resumen</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left">
+                    <tr>
+                      <td class="p-0 pt-4">
+                        <div class="card" style="background: #e9eef4; border: 0px solid rgba(0, 0, 0, 0.125); border-radius: 0rem; font-weight: 1000 !important;">
+                          <div class="card-body" style="padding-right: 8%; padding-left: 8%;">
+                            <table class="table table-card table-borderless" style="font-size: 14px;">
+                              <tbody>
+                                <tr>
+                                  <td class="text-color-blue-navy font-weight-bold" style="padding-right: 5% !important;">Importe de la compra</td>
+                                  <td class="font-weight-bold">1.926,35 €</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-color-blue-navy font-weight-bold" style="padding-right: 5% !important;">Coste del envío</td>
+                                  <td class="font-weight-bold">24,79 €</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-color-blue-navy pt-4" style="padding-top: 8% !important; font-weight: 800;font-size: 16px; padding-right: 5% !important;">
+                                      <strong>TOTAL A PAGAR </strong><strong style="font-size: 8px; font-weight: 1000 !important;"> (Iva Incl.)</strong></td>
+                                  <td class="font-weight-bold" style="padding-top: 8% !important; font-weight: 1000 !important; font-size: 16px;">2.188,40 €</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="row mt-5">
-                <div class="col">
-                  <div class="form-group">
-                    <input type="email" name="" class="form-control input-code" placeholder="Email">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <input type="password" name="" class="form-control input-code" placeholder="Contraseña">
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="col-sm-2 pr-0">
-                  <div class="custom-control custom-radio radio form-group">
-                    <input type="radio" id="customRadio1" name="customRadio" checked>
-                    <label class="custom-control-label radio-label" for="customRadio1">Sr.</label>
-                  </div>
-                </div>
-                <div class="col-sm-4 pl-0">
-                  <div class="custom-control custom-radio radio form-group">
-                    <input type="radio" id="customRadio2" name="customRadio">
-                    <label class="custom-control-label radio-label" for="customRadio2">Sra./Srta.</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control input-code" placeholder="Nombre">
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="col">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control input-code" placeholder="Apellidos">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control input-code" placeholder="NIF/NIE">
-                  </div>
-                </div>
+              <div class="col-12 col-md-8">
+                <table class="table table-borderless">
+                  <thead class="thead-table">
+                    <tr>
+                      <th scope="col" class="pl-4">Opciones</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left">
+                    <tr>
+                      <td class="pl-4 pt-4">
+                        <div class="custom-control custom-radio radio">
+                          <input type="radio" id="radioTransfer" name="customRadio">
+                          <label class="custom-control-label radio-label" for="radioTransfer" style="font-size: 14px;">
+                            <strong>Transferencia bancaria</strong> <br>
+                            <div class="row pl-4">
+                              Se le proporcionarán una vez realizado el pedido los datos necesarios para realizar el pago.
+                            </div>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pl-4 pt-4">
+                        <div class="custom-control custom-radio radio">
+                          <input type="radio" id="radioOnline" name="customRadio" checked>
+                          <label class="custom-control-label radio-label" for="radioOnline" style="font-size: 14px;">
+                            <strong>Pago Online SEGURO</strong> <br>
+                            <div class="row ml-0">
+                              <div class="col">
+                                <img src="img/visa.png" class="logo-payment-media" alt="Visa">
+                              </div>
+                              <div class="col">
+                                  <img src="img/mastercard.png" class="logo-payment-media" alt="MasterCard"> 
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pl-4 pt-4">
+                        <div class="custom-control custom-radio radio">
+                          <input type="radio" id="radioPaypal" name="customRadio">
+                          <label class="custom-control-label radio-label" for="radioPaypal" style="font-size: 14px;">
+                            <strong>Plataforma PayPal</strong> <br>
+                            <div class="row ml-0">
+                              <div class="col m-0">
+                                <img src="img/paypal.png" class="logo-payment-media" alt="Paypal">
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="pl-4 pt-4">
+                        <div class="custom-control custom-radio radio">
+                          <input type="radio" id="radioRefund" name="customRadio">
+                          <label class="custom-control-label radio-label" for="radioRefund" style="font-size: 14px;">
+                            <strong>Contra reembolso</strong> <br>
+                            <div class="row pl-4">
+                              Esta modalidad puede implicar gastos por comisión de la empresa de transporte.
+                            </div>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </div>
-          <div class="card" style="background: #f4f4f4; border: 0px solid rgba(0, 0, 0, 0.125); border-radius: 0rem;">
-            <div class="card-body">
-              <div class="card-text text-left text-color-blue-navy">
-                Dirección de envío <em style="font-size: 11px;">(Si difiere de la facturación es modificable desde el Área del Cliente)</em>
-                <hr class="ml-0" style="width: 9%;" />
-              </div>
-              <div class="row mt-5">
-                <div class="col">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control input-code" placeholder="Dirección">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control input-code" placeholder="Código postal">
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="col w-50">
-                    <span class="custom-dropdown form-group">
-                        <select class="padding-rigth-select">
-                            <option>España</option>
-                            <option>The Great</option>  
-                            <option>V for Vendetta</option>
-                            <option>The Wolf of Wallstreet</option>
-                            <option>Quantum of Solace</option>
-                        </select>
-                    </span>
-                </div>
-                <div class="col w-50">
-                  <span class="custom-dropdown form-group">
-                      <select class="padding-rigth-select">
-                          <option>Álava</option>
-                          <option>The Great</option>  
-                          <option>V for Vendetta</option>
-                          <option>The Wolf of Wallstreet</option>
-                          <option>Quantum of Solace</option>
-                      </select>
-                  </span>
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="col">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control input-code" placeholder="Población">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control input-code" placeholder="Teléfono">
-                  </div>
-                </div>
-              </div>
+            <div class="text-color-blue-navy">             
+              <hr />            
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center" style="margin-bottom: 8%;">
-        <div class="mt-5 form-group">
-          <div class="custom-control custom-radio radio">
-            <input type="radio" id="terms" name="customRadio" checked>
-            <label class="custom-control-label radio-label radio-label-square" for="terms" style="font-size: 14px;">
-              Acepto la <a href=""><u>política de privacidad</u></a> y las <a href=""><u>condiciones generales de compra</u></a>
-            </label>
-          </div>
-        </div>
-        <div class="mt-3 form-group">
-          <div class="custom-control custom-radio radio">
-            <input type="radio" id="offers" name="customRadio">
-            <label class="custom-control-label radio-label radio-label-square" for="offers" style="font-size: 14px;">
-              Deseo recibir información online de productos, ofertas y promociones
-            </label>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-4 offset-md-4">
-            <button type="button" class="btn btn-dark font-weight-bold" style="background: #2b8f8b; width: 100%; border-color: transparent; font-size: 20px;">REGISTRARSE</button>
-          </div>
-        </div>
+            <div class="text-right mt-5 row justify-content-end" style="margin-bottom: 20%;">
+                <div class="col-9">
+                  <a href="buy-process-basket.html" class="btn btn-dark font-weight-bold" style="background: #2b8f8b; width: 44%; border-color: transparent; font-size: 20px;">FINALIZAR COMPRA</a>
+                </div>
+            </div>
+          </fieldset>
+        </form>  
+      </section> 
       </div>
 
+    
+    
+    
     
     
         <!-- FOOTER -->
@@ -449,7 +445,7 @@
         <!-- FOOTER -->
 
     </main>
-    
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
