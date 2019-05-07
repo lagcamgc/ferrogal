@@ -23,8 +23,10 @@
 /* additional styles */
 body
 {
-  font-family: 'Open Sans', sans-serif;
-  color: #202427
+	font-family: 'Open Sans', sans-serif;
+	color: #202427;
+	padding-top: 1rem;
+	background: #fff !important
 }
 
 header {
@@ -161,10 +163,14 @@ hr.market-basket
 	padding: 0 17px
 }
 
-.margin-top-carousel {
-  /*margin-top: 5%;*/
+/*
+.margin-top-carousel
+{
+  margin-top: 5%;
   margin-top: 9%;
 }
+*/
+
 .padding-item {
   padding: 0.1rem 1.25rem 0.1rem 2.5rem;
 }
@@ -251,6 +257,7 @@ hr.market-basket
   height: 80px; 
   font-size: 15px;
   font-weight: bold;
+  text-transform: uppercase
 }
 
 .text-amount
@@ -1058,11 +1065,11 @@ a.borderless {
   font: 500 18px/35px 'Roboto', sans-serif;
   color: #3f4553;
 }
-/*.multi_step_form #msform fieldset h6 {
+.multi_step_form #msform fieldset h6 {
   font: 400 15px/28px 'Roboto', sans-serif;
   color: #5f6771;
   padding-bottom: 30px;
-}*/
+}
 .multi_step_form #msform fieldset .intl-tel-input {
   display: block;
   background: transparent;
@@ -1104,7 +1111,7 @@ a.borderless {
   padding-bottom: 70px;
 }
 .multi_step_form #msform fieldset .form-control, .multi_step_form #msform fieldset .product_select {
- /* border-radius: 3px;
+  border-radius: 3px;
   border: 1px solid #d8e1e7;
   padding: 0 20px;
   height: auto;
@@ -1112,7 +1119,7 @@ a.borderless {
   color: #5f6771;
   box-shadow: none;
   outline: none;
-  width: 100%;*/
+  width: 100%;
 }
 .multi_step_form #msform fieldset .form-control.placeholder, .multi_step_form #msform fieldset .product_select.placeholder {
   color: #5f6771;
@@ -1126,9 +1133,9 @@ a.borderless {
 .multi_step_form #msform fieldset .form-control::-webkit-input-placeholder, .multi_step_form #msform fieldset .product_select::-webkit-input-placeholder {
   color: #5f6771;
 }
-/*.multi_step_form #msform fieldset .form-control:hover, .multi_step_form #msform fieldset .product_select:hover, .multi_step_form #msform fieldset .form-control:focus, .multi_step_form #msform fieldset .product_select:focus {
+.multi_step_form #msform fieldset .form-control:hover, .multi_step_form #msform fieldset .product_select:hover, .multi_step_form #msform fieldset .form-control:focus, .multi_step_form #msform fieldset .product_select:focus {
   border-color: #5cb85c;
-}*/
+}
 .multi_step_form #msform fieldset .form-control:focus.placeholder, .multi_step_form #msform fieldset .product_select:focus.placeholder {
   color: transparent;
 }
