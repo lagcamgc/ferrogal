@@ -1545,3 +1545,8 @@ input[type=number]::-webkit-inner-spin-button {
 .custom-dropdown::after {
   color: black;
 }
+
+/* ICON COLOR STAR*/
+.fa-star {
+	color: #f9b234;
+}

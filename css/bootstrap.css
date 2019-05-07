@@ -4804,11 +4804,13 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
+  font-size: 13px;
+  /*background-color: #e9ecef;*/
+  /*border-radius: 0.25rem;*/
+  font-family: Times New Roma
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -4816,10 +4818,10 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
+  content: "››";
   display: inline-block;
   padding-right: 0.5rem;
-  color: #6c757d;
-  content: "/";
+  color: black;
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
