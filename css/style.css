@@ -1549,3 +1549,14 @@ input[type=number]::-webkit-inner-spin-button {
 .fa-star {
     color: #f9b234;
 }
+
+.input-form-product-sheet {
+	height: 35px;
+	border: 1px solid black;
+	border-radius: 0rem;
+	font-size: 13px;
+}
+
+.input-form-product-sheet::placeholder {
+  font-size: 13px;
+}
