@@ -467,6 +467,10 @@ hr.market-basket
   .width-dropdown-menu {
     width: 430% !important;
   }
+
+  .multiselect {
+    width: 186.5px !important;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1023px){
@@ -1550,6 +1554,170 @@ input[type=number]::-webkit-inner-spin-button {
     color: #f9b234;
 }
 
+/* MULTISELECT */
+
+.multiselect {
+    width: 244.5px;
+    height: 150px;
+    border: solid 0px;
+    overflow: auto;
+    background-color: white;
+}
+ 
+.multiselect label {
+    display:block;
+}
+ 
+.multiselect-on {
+    color:#ffffff;
+    background-color:#;
+}
+
+.background-option {
+	background: white !important;
+	border-color: black !important;
+}
+
+/* SLIDER RANGE */
+[slider] {
+  position: relative;
+  height: 14px;
+  border-radius: 10px;
+  text-align: left;
+  /*margin: 45px 0 10px 0;*/
+}
+
+[slider] > div {
+  position: absolute;
+  left: 10px;
+  right: 18px;
+  /*left: 2px;*/
+  /*right: 2px;*/
+  height: 14px;
+}
+
+[slider] > div > [inverse-left] {
+  position: absolute;
+  left: 0;
+  height: .6rem;
+  border-radius: 10px;
+  background-color: #cacacb;
+  /*margin: 0 7px;*/
+}
+
+[slider] > div > [inverse-right] {
+  position: absolute;
+  right: 0;
+  height: .6rem;
+  border-radius: 10px;
+  background-color: #cacacb;
+  /*margin: 0 7px;*/
+}
+
+[slider] > div > [range] {
+  position: absolute;
+  left: 0;
+  height: .6rem;
+  border-radius: 14px;
+  background-color: #2b578f;
+}
+
+[slider] > div > [thumb] {
+  position: absolute;
+  top: -8px;
+  z-index: 2;
+  height: 28px;
+  width: 28px;
+  text-align: left;
+  margin-left: -11px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #FFF;
+  border-radius: 50%;
+  outline: none;
+  border: 1.5px solid #2b578f;
+}
+
+[slider] > input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 3;
+  height: .6rem;
+  top: -2px;
+  width: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+div[slider] > input[type=range]::-ms-track {
+  -webkit-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent;
+}
+
+div[slider] > input[type=range]:focus {
+  outline: none;
+}
+
+div[slider] > input[type=range]::-ms-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+}
+
+div[slider] > input[type=range]::-moz-range-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+}
+
+div[slider] > input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+  -webkit-appearance: none;
+}
+
+div[slider] > input[type=range]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type=range]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type=range]::-ms-tooltip {
+  display: none;
+}
+
+
+
 .input-form-product-sheet {
 	height: 35px;
 	border: 1px solid black;
@@ -1560,3 +1728,4 @@ input[type=number]::-webkit-inner-spin-button {
 .input-form-product-sheet::placeholder {
   font-size: 13px;
 }
+
