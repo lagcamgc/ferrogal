@@ -24,7 +24,9 @@
 body
 {
   font-family: 'Open Sans', sans-serif;
-  color: #202427
+  color: #202427;
+  padding-top: 1rem;
+  background: #fff !important
 }
 
 header {
@@ -161,10 +163,10 @@ hr.market-basket
 	padding: 0 17px
 }
 
-.margin-top-carousel {
-  /*margin-top: 5%;*/
+/*.margin-top-carousel {
+  /*margin-top: 5%;
   margin-top: 9%;
-}
+}*/
 .padding-item {
   padding: 0.1rem 1.25rem 0.1rem 2.5rem;
 }
@@ -251,6 +253,7 @@ hr.market-basket
   height: 80px; 
   font-size: 15px;
   font-weight: bold;
+  text-transform: uppercase
 }
 
 .text-amount
@@ -471,6 +474,25 @@ hr.market-basket
   .multiselect {
     width: 186.5px !important;
   }
+  .mx-5 {
+  	margin-left: 2rem !important;
+  	margin-right: 2rem !important;
+  }
+
+  .col-orders-placed-left {
+	margin-left: 2% !important; 
+	margin-right: 1% !important;
+	}
+
+	.col-orders-placed-rigth {
+		margin-left: 1% !important; 
+		margin-right: 2% !important;
+	}
+
+	.col-orders-placed-medium {
+		margin-left: 1% !important; 
+		margin-right: 1% !important;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1023px){
@@ -1729,3 +1751,17 @@ div[slider] > input[type=range]::-ms-tooltip {
   font-size: 13px;
 }
 
+.col-orders-placed-left {
+	margin-left: 4%; 
+	margin-right: 2%;
+}
+
+.col-orders-placed-rigth {
+	margin-left: 2%; 
+	margin-right: 4%;
+}
+
+.col-orders-placed-medium {
+	margin-left: 2%; 
+	margin-right: 2%;
+}
