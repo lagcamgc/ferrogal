@@ -56,6 +56,8 @@ $(window).on('load', function()
             
             for (var j = 0; j < items.length; j++)
             {
+                console.log(this.outerText);
+                console.log("AQUI " + items[j]["name"]);
                 if (this.outerText == items[j]["name"])
                 {
                     lengthSeconds = items[j].items.length;
@@ -97,6 +99,7 @@ $(window).on('load', function()
         {
             for (var i = 0; i < items[j].items.length; i++)
             {
+                console.log(element.currentTarget.innerHTML);
                 if (element.currentTarget.innerHTML == items[j].items[i]['name'])
                 {
                     $("#third-options").find("li").remove();
