@@ -212,6 +212,7 @@ function containerHeightSecond(size) {
     }
 }
 
+
 document.getElementById('myDropdown').addEventListener('click', function(event) {
     event.stopPropagation();
 });

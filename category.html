@@ -311,38 +311,38 @@
                   </div>
                   <div class="row justify-content-between mt-4">
                     <div class="col-5">
-                      <input type="number" maxlength="6" size="4" value="0" min="1" step="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" style="width: 100%; border: 0px;"/>
+                      <input type="number" maxlength="6" size="4" value="0" min="1" step="1" id="min" onkeypress="return event.charCode >= 48 && event.charCode <= 57" style="width: 100%; border: 0px;" onchange =""/>
                     </div>
                     <div class="col-5">
-                      <input type="number" maxlength="6" size="4" value="1720" min="1" step="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" style="width: 100%; border: 0px;"/>
+                      <input type="number" maxlength="6" size="4" value="1720" min="1" step="1" id="max" onkeypress="return event.charCode >= 48 && event.charCode <= 57" style="width: 100%; border: 0px;" onclick/>
                     </div>
                   </div>
                   <div class="mt-4">
                     <div slider id="slider-distance">
                       <div>
-                        <div inverse-left style="width:0%;"></div>
-                        <div inverse-right style="width:70%;"></div>
-                        <div range style="left:0%;right:40%;"></div>
-                        <span thumb style="left:0%;"></span>
-                        <span thumb style="left:60%;"></span>
+                        <div inverse-left style="width:0%;" id="inverse-left"></div>
+                        <div inverse-right style="width:70%;" id="inverse-right"></div>
+                        <div range style="left:0%;right:40%;" id="range"></div>
+                        <span thumb style="left:0%;" id="thumb-left"></span>
+                        <span thumb style="left:60%;" id="thumb-rigth"></span>
                       </div>
-                      <input type="range" tabindex="0" value="0" max="100" min="0" step="1" oninput="
-                      this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
-                      var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
-                      var children = this.parentNode.childNodes[1].childNodes;
-                      children[1].style.width=value+'%';
-                      children[5].style.left=value+'%';
-                      children[7].style.left=value+'%';children[11].style.left=value+'%';
-                      children[11].childNodes[1].innerHTML=this.value;" />
+                      <input type="range" tabindex="0" value="0" id="minInput" max="100" min="0" step="1" oninput="
+                      console.log($('#maxInput').attr('value'));
+                      this.value=Math.min(this.value,$('#maxInput').attr('value')-1);
+                      document.getElementById('min').value = this.value; 
+                      var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);                      
+                      $('#inverse-left').css('width', value+'%');
+                      $('#range').css('left', value+'%');
+                      $('#thumb-left').css('left', value+'%');" />
 
-                      <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
-                      this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                      <input type="range" tabindex="0" value="60" id="maxInput" max="100" min="0" step="1" oninput="
+                      console.log($('#minInput').attr('value'));
+                      this.value=Math.max(this.value,$('#minInput').attr('value')-(-1));
+                      document.getElementById('max').value = this.value; 
                       var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
-                      var children = this.parentNode.childNodes[1].childNodes;
-                      children[3].style.width=(100-value)+'%';
-                      children[5].style.right=(100-value)+'%';
-                      children[9].style.left=value+'%';children[13].style.left=value+'%';
-                      children[13].childNodes[1].innerHTML=this.value;" />
+                      $('#inverse-right').css('width', (100-value)+'%');
+                      $('#range').css('right', (100-value)+'%');
+                      $('#thumb-rigth').css('left', value+'%');" />
                     </div>
                   </div>
                   <div class="text-center mt-5">
