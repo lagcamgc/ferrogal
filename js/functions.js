@@ -212,6 +212,57 @@ function containerHeightSecond(size) {
     }
 }
 
+function lowPriceBar () {
+    var minValue =Math.min(document.getElementById('minInput').value, $('#maxInput').attr('value')-1);
+    var max = document.getElementById('minInput').getAttribute("max");
+    var min = document.getElementById('minInput').getAttribute("min");
+
+    document.getElementById('min').value = minValue; 
+    styleLeft(min, max, minValue);
+}
+
+function highPriceBar () {
+    var maxValue =Math.max(document.getElementById('maxInput').value, $('#minInput').attr('value')-(-1));
+
+    var max = document.getElementById('maxInput').getAttribute("max");
+    var min = document.getElementById('maxInput').getAttribute("min");
+
+    document.getElementById('max').value = maxValue;
+
+    styleRigth(min, max, maxValue);
+}
+
+function lowPriceInput() {
+
+    var minValue =Math.min(document.getElementById('min').value, $('#maxInput').attr('value')-1);
+    var max = document.getElementById('min').getAttribute("max");
+    var min = document.getElementById('min').getAttribute("min");
+    styleLeft(min, max, minValue);
+
+}
+
+function highPriceInput () {
+    var maxValue =Math.max(document.getElementById('max').value, $('#minInput').attr('value')-(-1));
+
+    var max = document.getElementById('max').getAttribute("max");
+    var min = document.getElementById('max').getAttribute("min");
+
+    styleRigth(min, max, maxValue);
+}
+
+function styleLeft (min, max, minValue) {
+    var value=(100/(parseInt(max)-parseInt(min)))*parseInt(minValue)-(100/(parseInt(max)-parseInt(min)))*parseInt(min);
+    document.getElementById("inverse-left").style["width"] = value + "%";
+    document.getElementById("range").style["left"] = value + "%";
+    document.getElementById("thumb-left").style["left"] = value + "%";
+}
+
+function styleRigth(min, max, maxValue) {
+    var value=(100/(parseInt(max)-parseInt(min)))*parseInt(maxValue)-(100/(parseInt(max)-parseInt(min)))*parseInt(min);
+    document.getElementById("inverse-right").style["width"] = (100-value) + "%";
+    document.getElementById("range").style["right"] = (100-value) + "%";
+    document.getElementById("thumb-rigth").style["left"] = value + "%";
+}
 
 document.getElementById('myDropdown').addEventListener('click', function(event) {
     event.stopPropagation();
