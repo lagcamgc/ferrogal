@@ -493,6 +493,19 @@ hr.market-basket
 		margin-left: 1% !important; 
 		margin-right: 1% !important;
 	}
+
+	.basket-card-text {
+		font-size: 11px !important;
+		margin-top: 12% !important;
+	}
+
+	.discount-code {
+		margin-top: 14% !important;
+	}
+
+	.modal-lg, .modal-xl {
+    	max-width: 95%;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1023px){
@@ -1751,6 +1764,19 @@ div[slider] > input[type=range]::-ms-tooltip {
   font-size: 13px;
 }
 
+.textarea-billing-data {
+	border-color: transparent; 
+	border-radius: 0rem; 
+	border: 0px; 
+	color: black; 
+	font-size: 12px;
+}
+
+.textarea-billing-data::placeholder {
+  font-size: 14px;
+  color: black !important;
+}
+
 .col-orders-placed-left {
 	margin-left: 4%; 
 	margin-right: 2%;
@@ -1764,4 +1790,244 @@ div[slider] > input[type=range]::-ms-tooltip {
 .col-orders-placed-medium {
 	margin-left: 2%; 
 	margin-right: 2%;
+}
+
+.width-15 {
+	width: 15%;
+}
+
+.width-27 {
+	width: 27%;
+}
+
+.width-40 {
+	width: 40%;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.table-text-description {
+	font-size: 14px;
+}
+
+.table-text-padding {
+	padding: 9px 12px;
+}
+
+.card-blue {
+	background: #e9eef4; 
+	border: 0px solid rgba(0, 0, 0, 0.125); 
+	border-radius: 0rem;
+}
+
+.card-gray {
+	background: #e8e9e9; 
+	border: 0px solid rgba(0, 0, 0, 0.125); 
+	border-radius: 0rem;
+}
+
+.card-gray-light {
+	background: #f4f4f4; 
+	border: 0px solid rgba(0, 0, 0, 0.125); 
+	border-radius: 0rem;
+}
+
+.card-white {
+	background-color: white; 
+	border: 0px !important;
+}
+
+.card-calification {
+	border-radius: 0rem; 
+	border-color: #95abc7;
+}
+
+.basket-card-text {
+	font-size: 13px;
+	color: black; 
+	margin-top: 7%;
+}
+
+.margin-top-11 {
+	margin-top: 11%;
+}
+
+.button-code {
+	height: 35px; 
+	width: 100%; 
+	font-size: 13px;    
+	vertical-align: top; 
+	padding: 7px;
+}
+
+.btn-register {
+	height: 36px; 
+	width: 100%; 
+	font-size: 14px; 
+	vertical-align: top; 
+	padding: 7px;
+}
+
+.btn-send {
+	height: 37px; 
+	width: 100%; 
+	font-size: 13px; 
+	vertical-align: top; 
+	padding: 7px;
+}
+.button-buy {
+	background: #2b8f8b; 
+	width: 44%; 
+	border-color: transparent; 
+	font-size: 20px;
+}
+
+.btn-buy-padding {
+	padding: 8px 15px;
+} 
+
+.card-total-padding {
+	padding-right: 26%; 
+	padding-left: 14%;
+}
+
+.text-font-size-10 {
+	font-size: 10px;
+}
+
+.text-font-size-12 {
+	font-size: 12px;
+}
+
+.text-font-size-13 {
+	font-size: 13px;
+}
+
+.text-font-size-14 {
+	font-size: 14px;
+}
+
+.text-font-size-16 {
+	font-size: 16px;
+}
+
+.text-font-size-18 {
+	font-size: 18px;
+}
+
+.text-color-black {
+	color: black;
+}
+
+.margin-bottom-5 {
+	margin-bottom: 5%;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10%;
+}
+
+.margin-bottom-15 {
+	margin-bottom: 15%;"
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20%;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30%;"
+}
+
+.margin-bottom-35 {
+	margin-bottom: 35%;"
+}
+
+.text-login {
+	color: #976c42; 
+	font-size: 17px;
+}
+
+.btn-green {
+	background: #2b8f8b; 
+	width: 44%; 
+	border-color: transparent; 
+	font-size: 20px;
+}
+
+.card-padding-payment {
+	padding-right: 8%; 
+	padding-left: 8%;
+}
+
+.padding-right-payment-5 {
+	padding-right: 5% !important;
+}
+
+.iva {
+	font-size: 8px; 
+	font-weight: 1000 !important;
+}
+
+.payment-amount {
+	padding-top: 8% !important; 
+	font-weight: 1000 !important;
+}
+
+.payment-total-amount {
+	padding-top: 8% !important; 
+	font-weight: 800; 
+	padding-right: 5% !important;
+}
+
+.transport-text-contact {
+	font-size: 10px; 
+	text-align: justify;
+}
+
+.border-color-transparent {
+	border-color: transparent
+}
+
+.margin-card-customer-area {
+	margin-left: 25%; 
+	margin-right: 22%;
+}
+
+.badge {
+	background-color: #e9eef4; 
+	font-weight: 1000; 
+	width: 100%;
+}
+
+.card-body-modal-padding {
+	padding-top: 10%; 
+	padding-bottom: 10%;
+}
+
+.product-sheet-sharen {
+	background: #666666; 
+	width: 5%; 
+	height: 28px;
+}
+
+.product-sheet-sharen > i{
+	color: white; 
+	vertical-align: bottom;
+}
+
+.background-gray-light {
+	background: #f4f4f4;
+}
+
+.background-white {
+	background: white;
+}
+
+.product-sheet-discount {
+	padding: 2px 6px; 
+	margin-left: 0px; 
+	font-size: 14px;
 }
