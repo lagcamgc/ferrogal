@@ -182,6 +182,9 @@ $(window).on('load', function()
     }
 
   });
+  document.getElementById('valuations').onclick = function() {
+    $('#nav-profile-tab').tab('show');
+  };
 });
 
 function containerHeightThird(size) {
