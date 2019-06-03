@@ -13,7 +13,7 @@ $(window).on('load', function()
     ({
         urlArgs: "bust=" + (new Date()).getTime()
     });
-    
+
     
     
     var lengthSeconds = 0;
@@ -24,7 +24,6 @@ $(window).on('load', function()
         function(element)
         {
             $("#third-options").css("border-left", 0 + "px");
-           
             let myItems = $("#first-options li") , selected = this.outerText , found;
             
             $("#first-options").find("a")[0].id = "catItem";
@@ -56,8 +55,8 @@ $(window).on('load', function()
             
             for (var j = 0; j < items.length; j++)
             {
-                if (this.outerText == items[j]["name"])
-                {
+                if (element.currentTarget.innerText == items[j]["name"])
+                {    
                     lengthSeconds = items[j].items.length;
                     
                     containerHeightSecond(lengthSeconds);

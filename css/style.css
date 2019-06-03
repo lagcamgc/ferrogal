@@ -933,6 +933,7 @@ a.borderless {
     /*margin-bottom: 10px;*/
     overflow:scroll;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox 64 */
 }
 
 /* .dropdown{
@@ -942,7 +943,7 @@ a.borderless {
     -ms-overflow-style: none;
     scrollbar-width: none;
     z-index:111111111;
-    background-color:white  
+    background-color:white;
 }
 .list-group::-webkit-scrollbar { 
     display: none; 
@@ -1981,7 +1982,7 @@ div[slider] > input[type=range]::-ms-tooltip {
 }
 
 .margin-bottom-15 {
-	margin-bottom: 15%;"
+	margin-bottom: 15%;
 }
 
 .margin-bottom-20 {
@@ -1989,11 +1990,11 @@ div[slider] > input[type=range]::-ms-tooltip {
 }
 
 .margin-bottom-30 {
-	margin-bottom: 30%;"
+	margin-bottom: 30%;
 }
 
 .margin-bottom-35 {
-	margin-bottom: 35%;"
+	margin-bottom: 35%;
 }
 
 .text-login {
